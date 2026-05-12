@@ -34,7 +34,7 @@ from datetime import datetime
 #  CONFIGURATION
 # ==============================================================
 
-ROBOFLOW_API_KEY = "YOUR_NEW_API_KEY_HERE"
+ROBOFLOW_API_KEY = "DFRAPJ5ad6Ubpu6wZEj3"
 WORKSPACE        = "kareems-workspace-1tyaf"
 PROJECT          = "seats-detection-lfkct"
 VERSION_NUMBER   = 4

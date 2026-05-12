@@ -1,0 +1,38 @@
+======================================================================
+  LATENCY BENCHMARK REPORT
+======================================================================
+
+SYSTEM SPECIFICATIONS
+----------------------------------------------------------------------
+   CPU         : Intel64 Family 6 Model 165 Stepping 5, GenuineIntel
+   OS          : Windows 11
+   Python      : 3.12.10
+   PyTorch     : 2.5.1+cu121
+   GPU         : NVIDIA GeForce RTX 3060
+   VRAM        : 12.9 GB
+   CUDA        : 12.1
+
+MODEL
+----------------------------------------------------------------------
+   Model:        YOLOv8m (weighted loss)
+   Input size:   1280 x 1280
+   Weights:      runs/detect/exp4_weighted_occupied/weights/best.pt
+
+BENCHMARK RESULTS
+----------------------------------------------------------------------
+Device          Pre (ms)     Inf (ms)     Post (ms)    Total (ms)   FPS     
+----------------------------------------------------------------------
+GPU (NVIDIA GeForce RTX 3060) 5.60         51.62        1.52         58.74        17.0    
+CPU             9.10         839.82       0.76         849.67       1.2     
+
+======================================================================
+NOTES
+----------------------------------------------------------------------
+- Preprocess: image resize, normalization, tensor conversion
+- Inference:  forward pass through the neural network
+- Postprocess: non-maximum suppression, box filtering
+- Total: complete time per image
+- FPS: frames per second the model can process
+
+- Real-time threshold: typically 30 FPS (33.3 ms total)
+- Surveillance suitable: 5+ FPS (200 ms total)

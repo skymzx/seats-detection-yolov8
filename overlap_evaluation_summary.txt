@@ -1,0 +1,21 @@
+======================================================================
+  OVERLAP METHOD EVALUATION SUMMARY
+======================================================================
+
+Model:               yolov8m.pt (COCO pretrained, no custom training)
+Confidence threshold: 0.25
+Overlap threshold:    0.15
+Test images:          101
+
+Class        TP     FP     FN     Precision    Recall       F1      
+----------------------------------------------------------------------
+available    75     479    1237   0.1354       0.0572       0.0804  
+occupied     9      74     190    0.1084       0.0452       0.0638  
+----------------------------------------------------------------------
+AVERAGE                           0.1219       0.0512       0.0721  
+
+
+COMPARISON TO TRAINED MODEL (exp4 - YOLOv8m weighted)
+----------------------------------------------------------------------
+Trained model:  Precision=0.630  Recall=0.427  mAP@0.5=0.458
+Overlap method: Precision=0.1219  Recall=0.0512  F1=0.0721
